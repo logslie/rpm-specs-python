@@ -1,22 +1,21 @@
-%define module redis
+%define module urllib3
 %define _topdir %(echo $PWD)/
 %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")
 %define debug_package %{nil}
 
 Name:           python-%module
-Version:        2.10.3
+Version:        1.10
 Release:        1
-Summary:        Python client for Redis key-value store
+Summary: 	Python HTTP library with thread-safe connection pooling and file post
 License:        MIT
 Group:          Development/Python
-Url:            http://github.com/andymccurdy/redis-py/
-Source:         https://pypi.python.org/packages/source/r/%{module}/%{module}-%{version}.tar.gz
+Url: 		http://urllib3.readthedocs.org/
+Source:         https://pypi.python.org/packages/source/u/%{module}/%{module}-%{version}.tar.gz
 BuildRequires:  python
-Vendor: 	Andy McCurdy <sedrik@gmail.com>
 Packager: 	Luis Martin Gil
 
 %description
-Python client for Redis key-value store
+Python HTTP module with connection pooling and file POST abilities.
 
 %prep
 %setup -q -n %{module}-%{version}
