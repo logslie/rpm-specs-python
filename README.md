@@ -4,6 +4,11 @@
 + Use it on your own risk.
 
 
-Usage:
+Example possible usage:
 
-`rpmbuild -bb NAME.spec`
+  NAME=python-redis
+  VERSION=2.10.3
+  # Let's go
+  cd $NAME/$VERSION
+  mkdir -p BUILD RPMS
+  rpmbuild -bb $NAME.spec
