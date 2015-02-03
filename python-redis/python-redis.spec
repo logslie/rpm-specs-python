@@ -1,6 +1,7 @@
 %define module redis
 %define _topdir %(echo $PWD)/
 %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")
+%define debug_package %{nil}
 
 Name:           python-%module
 Version:        2.10.3
