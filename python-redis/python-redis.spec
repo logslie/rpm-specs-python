@@ -11,7 +11,6 @@ Group:          Development/Python
 Url:            http://github.com/andymccurdy/redis-py/
 Source:         https://pypi.python.org/packages/source/r/redis/%{module}-%{version}.tar.gz
 BuildRequires:  python
-BuildArch:      noarch
 Vendor: 	Andy McCurdy <sedrik@gmail.com>
 Packager: 	Luis Martin Gil
 
