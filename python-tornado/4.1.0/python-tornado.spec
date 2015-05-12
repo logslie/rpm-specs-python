@@ -4,7 +4,7 @@
 %define debug_package %{nil}
 
 Name:           python-%module
-Version:        4.1
+Version:        4.1.0
 Release:        1
 Summary:        Python web framework and asynchronous networking library
 License:        MIT
@@ -14,6 +14,8 @@ Source:         https://pypi.python.org/packages/source/t/%{module}/%{module}-%{
 BuildRequires:  python
 Vendor: 	Facebook
 Packager: 	Laura Garcia Perez
+Requires:	python-backports-ssl_match_hostname
+Requires:	python-pycurl
 
 %description
 Python web framework and asynchronous networking library
